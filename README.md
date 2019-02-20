@@ -19,14 +19,14 @@ Please follow the instructions below to understand how to get started. If you ha
   * Job seeking status
   * Photo upload
 
-[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module1) for Module 1  details.
+[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module1) for Module 1 details.
 
 * Module 2 : Talent Matching page
   * Get list of employers
   * Get list of talents
   * Save talents that are matched to employers
 
-[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module2) for Module 4  details.
+[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module2) for Module 2 details.
 
 * Module 3 : Talent Feed page
   * Front-end
@@ -35,7 +35,7 @@ Please follow the instructions below to understand how to get started. If you ha
   * Back-end 
     * Build action methods in controllers and in services to fetch data from the database
 	
-[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module3) for Module 2  details.
+[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module3) for Module 3 details.
  
 * Module 4 : Employer Watchlist page
   * Display, add and remove from watchlist
