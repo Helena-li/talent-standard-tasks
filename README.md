@@ -23,7 +23,6 @@ Please follow the instructions below to understand how to get started. If you ha
 
   * Module 2 : Talent Feed page
   * Front-end
-    * Convert dummy data to actual data fetched from the back-end
     * Add ajax calls to retrieve data from the controllers
   * Back-end 
     * Build action methods in controllers and in services to fetch data from the database
