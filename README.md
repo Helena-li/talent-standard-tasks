@@ -7,21 +7,17 @@ Please follow the instructions below to understand how to get started. If you ha
 ## Standard tasks
 
 * Module 1 : Talent profile page
-  * LinkedIn url
-  * GitHub url
+  * LinkedIn url & GitHub url
+  * Description
+  * User Details Component
   * Address
   * Nationality
   * Languages
   * Skills
   * Work experience
-  * Education
-  * Certification
   * Visa status
   * Job seeking status
   * Photo upload
-  * Video upload
-  * CV upload
-  * Description
 
 [Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module1) for Module 1  details.
 
