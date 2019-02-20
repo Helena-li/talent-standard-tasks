@@ -21,27 +21,28 @@ Please follow the instructions below to understand how to get started. If you ha
 
 [Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module1) for Module 1  details.
 
-* Module 2 : Talent Feed page
+* Module 2 : Talent Matching page
+  * Get list of employers
+  * Get list of talents
+  * Save talents that are matched to employers
+
+[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module2) for Module 4  details.
+
+* Module 3 : Talent Feed page
   * Front-end
     * Convert dummy data to actual data fetched from the back-end
     * Add ajax calls to retrieve data from the controllers
   * Back-end 
     * Build action methods in controllers and in services to fetch data from the database
 	
-[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module2) for Module 2  details.
+[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module3) for Module 2  details.
  
-* Module 3 : Employer Watchlist page
+* Module 4 : Employer Watchlist page
   * Display, add and remove from watchlist
   * Map routes using React Routing
 
-[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module3) for Module 3 details.
+[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module4) for Module 4 details.
 
-* Module 4 : Talent Matching page
-  * Get list of employers
-  * Get list of talents
-  * Save talents that are matched to employers
-
-[Click here](http://git.mvp.studio/talent-standard-tasks/talent-standard-tasks/wikis/guides/standard-task-module4) for Module 4  details.
 
 * Module 5 : Client Management (Bonus/Extension)
   * Create employer account
