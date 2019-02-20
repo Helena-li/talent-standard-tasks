@@ -4,6 +4,57 @@ This project will help interns at MVP Studio to understand how ReactJs, C# Web A
 
 Please follow the instructions below to understand how to get started. If you have any questions, please check if it has been asked on QuestionHub or raise the question there to get support. 
 
+## Standard tasks
+
+* Module 1 : Talent profile page
+  * LinkedIn url
+  * GitHub url
+  * Address
+  * Nationality
+  * Languages
+  * Skills
+  * Work experience
+  * Education
+  * Certification
+  * Visa status
+  * Job seeking status
+  * Photo upload
+  * Video upload
+  * CV upload
+  * Description
+
+[Click here](http://git.mvp.studio/talent-competition/talent-competition/wikis/guides/competition-task) for Module 1  details.
+
+* Module 2 : Talent Feed page
+  * Front-end
+    * Convert dummy data to actual data fetched from the back-end
+    * Add ajax calls to retrieve data from the controllers
+  * Back-end 
+    * Build action methods in controllers and in services to fetch data from the database
+	
+[Click here](http://git.mvp.studio/talent-competition/talent-competition/wikis/guides/competition-task) for Module 2  details.
+ 
+* Module 3 : Employer Watchlist page
+  * Display, add and remove from watchlist
+  * Map routes using React Routing
+
+[Click here](http://git.mvp.studio/talent-competition/talent-competition/wikis/guides/competition-task) for Module 3 details.
+
+* Module 4 : Talent Matching page
+  * Get list of employers
+  * Get list of talents
+  * Save talents that are matched to employers
+
+[Click here](http://git.mvp.studio/talent-competition/talent-competition/wikis/guides/competition-task) for Module 4  details.
+
+* Module 5 : Client Management (Bonus/Extension)
+  * Create employer account
+  
+[Click here](http://git.mvp.studio/talent-competition/talent-competition/wikis/guides/competition-task) for Module 5  details.
+
+
+## Guides to get started
+
 ### React tutorials/resources
 * https://reactjs.org/docs/hello-world.html
 * MVP Studio React Training.pdf can be found here
@@ -63,17 +114,3 @@ Install npm util packages:
 
 ### How to connect to the database
 [Click here](http://git.mvp.studio/talent-competition/talent-competition/wikis/guides/mongo-db) for more details.
-
-## Standard tasks
-
-[Click here](http://git.mvp.studio/talent-competition/talent-competition/wikis/guides/competition-task) for more details.
-
-* Task 1 : Employer profile page
-  * Add last name to the primary contact details
-  * Allow users to edit company contact details by clicking on the edit button
-  * Display the user's full name on primary contact details (for read only display)
-
-* Task 2 : Manage Job page
-  * Display jobs as a list of cards
-  * Bonus/Optional: Update a job, Close a job
-
