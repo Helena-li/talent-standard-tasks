@@ -8,6 +8,7 @@
 # Ignore all binary output folders
 **/obj/
 **/bin/
+**/node_modules/
 
 # Ignore personal files
 **/*.user
