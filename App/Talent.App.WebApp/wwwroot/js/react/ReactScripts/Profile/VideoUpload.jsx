@@ -15,6 +15,15 @@ export default class VideoUpload extends React.Component {
     }
 
     render() {
-        
+        return (
+            <div className='row'>
+                <div className="ui sixteen wide column">
+                    <React.Fragment>
+                        <p>Profile Video:</p>
+                    </React.Fragment>
+                    <button type="button" className="ui right floated teal button">Edit</button>
+                </div>
+            </div>
+        )
     }
 }

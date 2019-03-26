@@ -92,6 +92,7 @@ export default class AccountProfile extends React.Component {
     //updates component's state and saves data
     updateAndSaveData(newValues) {
         let newProfile = Object.assign({}, this.state.profileData, newValues)
+        console.log(newProfile)
         this.setState({
             profileData: newProfile
         }, this.saveProfile)
@@ -253,7 +254,9 @@ export default class AccountProfile extends React.Component {
                                             hideSegment={true}
                                         >
                                             <PhotoUpload
-                                                imageId={this.state.profileData.profilePhotoUrl}
+                                                //imageId={this.state.profileData.profilePhotoUrl}
+                                                imageURL={this.state.profileData.profilePhotoUrl}
+                                                imageName={this.state.profileData.profilePhoto}
                                                 updateProfileData={this.updateWithoutSave}
                                                 savePhotoUrl='http://localhost:60290/profile/profile/updateProfilePhoto'
                                             />

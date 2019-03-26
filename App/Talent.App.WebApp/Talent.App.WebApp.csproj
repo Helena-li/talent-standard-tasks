@@ -12,14 +12,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\js\react\node_modules\**" />
-    <Compile Remove="wwwroot\js\react\ReactScripts\NewFolder\**" />
-    <Content Remove="wwwroot\js\react\node_modules\**" />
-    <Content Remove="wwwroot\js\react\ReactScripts\NewFolder\**" />
-    <EmbeddedResource Remove="wwwroot\js\react\node_modules\**" />
-    <EmbeddedResource Remove="wwwroot\js\react\ReactScripts\NewFolder\**" />
-    <None Remove="wwwroot\js\react\node_modules\**" />
-    <None Remove="wwwroot\js\react\ReactScripts\NewFolder\**" />
+    <Compile Remove="wwwroot\images\js\react\node_modules\**" />
+    <Compile Remove="wwwroot\images\js\react\ReactScripts\NewFolder\**" />
+    <Content Remove="wwwroot\images\js\react\node_modules\**" />
+    <Content Remove="wwwroot\images\js\react\ReactScripts\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\images\js\react\node_modules\**" />
+    <EmbeddedResource Remove="wwwroot\images\js\react\ReactScripts\NewFolder\**" />
+    <None Remove="wwwroot\images\js\react\node_modules\**" />
+    <None Remove="wwwroot\images\js\react\ReactScripts\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>

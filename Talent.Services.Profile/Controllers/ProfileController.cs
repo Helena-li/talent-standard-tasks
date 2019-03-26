@@ -235,15 +235,32 @@ namespace Talent.Services.Profile.Controllers
         {
             var profileUrl = _documentService.GetFileURL(Id, FileType.ProfilePhoto);
             //Please do logic for no image available - maybe placeholder would be fine
-            return Json(new { profilePath = profileUrl });
+            if (profileUrl != null)
+            {
+                return Json(new { profilePath = profileUrl });
+            }
+            return Json(new { profilePath = "" });
         }
 
         [HttpPost("updateProfilePhoto")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "talent")]
         public async Task<ActionResult> UpdateProfilePhoto()
-        {
+        {            
             //Your code here;
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+
+            IFormFile file = Request.Form.Files[0];
+            var userId = _userAppContext.CurrentUserId;
+            
+
+            if(file != null)
+            {
+                var talentResult = await _profileService.UpdateTalentPhoto(userId, file);
+                return Json(new { Success = true, talent = talentResult });
+            }
+
+            return Json(new { Success = false });
+
         }
 
         [HttpPost("updateTalentCV")]

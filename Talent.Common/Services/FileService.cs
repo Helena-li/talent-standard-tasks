@@ -28,19 +28,95 @@ namespace Talent.Common.Services
         public async Task<string> GetFileURL(string id, FileType type)
         {
             //Your code here;
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            string fileURL = await Task.Run(() => {
+                //return string.Join("/", "http://localhost:60290/images", id);
+                return string.Join("/", id);
+            });
+
+            return fileURL;
+        }
+
+        public async Task<string> GetFileURLToUpdate(string id, FileType type)
+        {
+            //Your code here;
+            //throw new NotImplementedException();
+            string fileURL = await Task.Run(() => {
+                return string.Join("/", "http://localhost:60290/images", id);
+                //return string.Join("/", id);
+            });
+
+            return fileURL;
         }
 
         public async Task<string> SaveFile(IFormFile file, FileType type)
         {
             //Your code here;
-            throw new NotImplementedException();
-        }
+            //throw new NotImplementedException();
+            var uploads = Path.Combine(_environment.ContentRootPath, _tempFolder);
+            var fileName = string.Empty;
+            var newFileName = string.Empty;
+
+            //Getting FileName
+            fileName = System.Net.Http.Headers.ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+
+            //Assigning Unique Filename (Guid)
+            var myUniqueFileName = Convert.ToString(Guid.NewGuid());
+
+            //Getting file Extension
+            var FileExtension = Path.GetExtension(fileName);
+
+            // concating  FileName + FileExtension
+            newFileName = myUniqueFileName + FileExtension;
+
+            try
+            {
+                if (file.Length > 0)
+                {
+                    var filePath = Path.Combine(uploads, newFileName);
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        // Save the file
+                        await file.CopyToAsync(fileStream);
+                    }
+
+                }
+                // return file.FileName;
+                return newFileName;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+                // return null;
+            }
+
+    }
 
         public async Task<bool> DeleteFile(string id, FileType type)
         {
             //Your code here;
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            //var imagesFolderPath = Path.Combine(_environment.WebRootPath, _tempFolder);
+            var imagesFolderPath = Path.Combine(_environment.ContentRootPath, _tempFolder);
+            var filePath = Path.Combine(_tempFolder, id);
+
+            try
+            {
+                if (File.Exists(filePath))
+                {
+                    await Task.Run(() =>
+                    {
+                        File.Delete(filePath);
+                        return true;
+                    });
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+                //return false;
+            }
         }
 
 
